@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>jquery.each</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="" rel="stylesheet">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <script src="../lib/jquery/v3.5.1/jquery.min.js"></script>
+    <script>
+        var arr = [
+            { name: 'aaa' },
+            { name: 'bbb' },
+            { name: 'ccc' },
+            { name: 'ddd' },
+            { name: 'eee' },
+        ]
+        var arr = ['a', 'b', { name: 'ccc' }, 'd']
+
+        var arr = {
+            city: '成都',
+            name: 'wangkun',
+            sex: '男',
+            school: '高职'
+        }
+        var old = {}
+        var result = $.each(arr, function(idx, val) {
+            console.log(idx, val)
+            if (idx === 'sex') {
+                return 2;
+            }
+            old[idx] = val;
+        })
+        console.log('result>>>', result);
+        console.log('old>>>', old);
+    </script>
+</body>
+
+</html>
