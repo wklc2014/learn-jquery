@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>jquery.addClass</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="" rel="stylesheet">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        成都
+    </div>
+    <p class="box">绵阳</p>
+    <a href="#" class="box">上海</a>
+    <ul class="box">
+        <li class="box">1</li>
+        <li>2</li>
+    </ul>
+    <ol class="good">
+        <li class="li_1">a</li>
+        <li class="li_2">b</li>
+        <li class="li_3">c</li>
+    </ol>
+    <script src="../lib/jquery/v3.5.1/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $('.box').addClass('hello world');
+            $('.good li').addClass(function(idx, cls) {
+                console.log('idx, cls>>>', idx, cls);
+            })
+        })
+    </script>
+</body>
+
+</html>
