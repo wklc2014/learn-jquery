@@ -23,7 +23,7 @@
         <li class="box">1</li>
         <li>2</li>
     </ul>
-    <ol class="good">
+    <ol class="good" id="not">
         <li class="li_1">a</li>
         <li class="li_2">b</li>
         <li class="li_3">c</li>
@@ -31,10 +31,12 @@
     <script src="../lib/jquery/v3.5.1/jquery.min.js"></script>
     <script>
         $(function() {
-            $('.box').addClass('hello world');
+            // $('.box').addClass('hello world');
             $('.good li').addClass(function(idx, cls) {
                 console.log('idx, cls>>>', idx, cls);
             })
+            var not = $('.box').addClass('aaa');
+            console.log('not>>>', not[1]);
         })
     </script>
 </body>

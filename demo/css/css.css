@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    font-family: '微软雅黑';
+    line-height: 1.8;
+    padding: 32px;
+}
+
+.box {
+    margin-bottom: 16px;
+}
+
+.div_box {
+    border: 1px solid #ddd;
+    padding: 16px;
+    background: #f00;
+    color: #fff;
+    width: 500px;
+    height: 180px;
+    position: relative;
+    margin: 10px;
+}
+
+.child {
+    margin: 20px;
+}
+
+.p_box {
+    border: 1px solid #ddd;
+    padding: 16px;
+    background: #eee;
+    color: #444;
+    height: 60px;
+}
+
+.h1_box {
+    padding: 8px;
+    line-height: 80px;
+    height: 100px;
+    color: blue;
+    background: #0ff;
+}

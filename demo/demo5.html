@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>jquery 18</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="" rel="stylesheet">
+    <link rel="stylesheet" href="css/css.css">
+</head>
+
+<body>
+    <div class="box div_box">
+      <div class="child">成都</div>
+    </div>
+    <p class="box p_box">上海</p>
+    <h1 class="box h1_box">
+      <a href="#simple">北京</a>
+    </h1>
+    <p style="height: 1000px;">1</p>
+    <div id="simple">位置</div>
+    <p style="height: 1000px;">2</p>
+    <script src="../lib/jquery/v3.5.1/jquery.min.js"></script>
+    <script>
+      $(function() {
+        var box = $('.box');
+        var div = $('.div_box');
+        var p = $('.p_box');
+        var h1 = $('.h1_box');
+        var child = $('.child');
+        // div.height(100)
+        var value = child.css(['width', 'height', 'color', 'position']);
+        console.log('value>>>', value);
+      })
+    </script>
+</body>
+
+</html>
